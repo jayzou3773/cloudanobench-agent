@@ -93,7 +93,8 @@
             <div class="is-size-5 publication-authors">
               <span class="author-block"><a href="https://jayzou3773.github.io/"><strong>Xinkai
                     Zou</strong></a><sup>1</sup>,</span>
-              <span class="author-block"><a href="https://xuan-1998.github.io/"><strong>Xuan Jiang</strong></a><sup>2*</sup>,</span>
+              <span class="author-block"><a href="https://xuan-1998.github.io/"><strong>Xuan
+                    Jiang</strong></a><sup>2*</sup>,</span>
               <span class="author-block"><a href="https://rkh.lol"><strong>Ruikai Huang</strong></a><sup>3</sup>,</span>
               <span class="author-block"><a href="https://hectorhhz.github.io"><strong>Haoze
                     He</strong></a><sup>4</sup>,</span>
@@ -135,7 +136,8 @@
               <div class="publication-links">
                 <!-- PDF Link. -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/pdf/2508.01844" class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://arxiv.org/pdf/2508.01844v2"
+                    class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                     </span>
@@ -143,7 +145,8 @@
                   </a>
                 </span>
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2508.01844" class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://arxiv.org/abs/2508.01844v2"
+                    class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="ai ai-arxiv"></i>
                     </span>
@@ -264,16 +267,44 @@
     </div>
   </section>
 
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-two-thirds has-text-centered">
+          <figure class="image is-inline-block" style="margin: 0 auto;">
+            <img src="./static/images/results.png" alt="Experimental results overview">
+          </figure>
+        </div>
+      </div>
+      <p class="is-size-6"><strong>Experimental Results:</strong> Experiments on CloudAnoBench demonstrate that
+        CloudAnoAgent substantially outperforms all baseline methods across anomaly detection and scenario
+        identification tasks. Compared with machine learning models and vanilla LLM prompting, CloudAnoAgent achieves
+        the highest average F1-score of 91.3% and the lowest false positive rate of 12.9%, indicating its robustness
+        against deceptive normal cases. The integration of the symbolic verifier further reduces false alarms by 4% and
+        increases F1-score by 2%, confirming its role as a reliable critic that enhances detection stability. For
+        scenario identification, CloudAnoAgent improves accuracy by 13.7% over vanilla LLMs and 20% over ML baselines,
+        though performance decreases as the number of anomaly scenarios increases due to longer context windows and
+        higher semantic overlap. Moreover, CloudAnoAgent exhibits strong generalization ability on other datasets such
+        as HDFS v1, Thunderbird, and BGL, achieving performance comparable to specialized log-based models like LogLLM
+        and LogBERT. Overall, these results highlight CloudAnoAgent's capability to handle multimodal, context-level
+        anomalies and its adaptability to diverse real-world cloud monitoring scenarios.</p>
+    </div>
+  </section>
+
+
 
 
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@article{zou2025cloudanoagent,
-  title={CloudAnoAgent: Anomaly Detection for Cloud Sites via LLM Agent with Neuro-Symbolic Mechanism},
-  author={Zou, Xinkai and Jiang, Xuan and Huang, Ruikai and He, Haoze and Kapoor, Parv and Zhao, Jiahua},
-  journal={arXiv preprint arXiv:2508.01844},
-  year={2025}
+      <pre><code>@misc{zou2025generalizablecontextawareanomalydetection,
+  title={Towards Generalizable Context-aware Anomaly Detection: A Large-scale Benchmark in Cloud Environments}, 
+  author={Xinkai Zou and Xuan Jiang and Ruikai Huang and Haoze He and Parv Kapoor and Hongrui Wu and Yibo Wang and Jian Sha and Xiongbo Shi and Zixun Huang and Jinhua Zhao},
+  year={2025},
+  eprint={2508.01844v2},
+  archivePrefix={arXiv},
+  primaryClass={cs.AI},
+  url={https://arxiv.org/abs/2508.01844v2}, 
 }</code></pre>
     </div>
   </section>
